@@ -96,6 +96,9 @@ body {
 
 .project h3 { margin-top: 0; }
 .project-actions { display: flex; gap: 10px; margin-top: 10px; }
+.project-thumb { position: relative; overflow: hidden; border-radius: 10px; border: 1px solid rgba(125,211,252,0.12); background: rgba(59,130,246,0.08); aspect-ratio: 16/9; margin-bottom: 12px; }
+.project-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.35s ease; }
+.project:hover .project-thumb img { transform: scale(1.03); }
 
 .contact-list { list-style: none; padding: 0; margin: 0 0 16px; color: var(--muted); }
 .contact-list a { color: var(--link); }
