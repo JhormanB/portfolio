@@ -1,0 +1,127 @@
+{
+  "meta": {
+    "title": "Jhorman Botello — Portfolio",
+    "description": "Portfolio of Jhorman Botello, Software Engineer & Full Stack Developer specialized in Frontend."
+  },
+  "nav": {
+    "about": "About",
+    "achievements": "Achievements",
+    "experience": "Experience",
+    "skills": "Skills",
+    "education": "Education",
+    "certifications": "Certifications",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "hero": {
+    "headline": "👋 Hi, I'm <span>Jhorman Botello</span> – Software Engineer & Full Stack Developer",
+    "subheadline": "Building scalable, user-focused web solutions with modern technologies.",
+    "downloadResume": "Download Resume",
+    "viewProjects": "View Projects"
+  },
+  "about": {
+    "title": "About Me",
+    "content": "I am a Systems Engineer and Full Stack Software Developer with over 3 years of experience building user-centric digital solutions. My work focuses on front-end performance optimization, clean UI/UX, and scalable back-end logic. I am passionate about technology, problem-solving, and continuous learning."
+  },
+  "achievements": {
+    "title": "Highlights & Achievements",
+    "items": [
+      {
+        "icon": "🚀",
+        "text": "Reduced browser rendering time by 75% (from 2 minutes to 30 seconds)."
+      },
+      {
+        "icon": "👥",
+        "text": "Led a team of 3 developers, improving project delivery time by 20%."
+      },
+      {
+        "icon": "⚡",
+        "text": "Redesigned a billing console handling large-scale datasets, achieving significant performance gains."
+      },
+      {
+        "icon": "✅",
+        "text": "Reduced front-end errors by 50% within the first semester, enabling faster feature development."
+      }
+    ]
+  },
+  "experience": {
+    "title": "Professional Experience",
+    "jobs": [
+      {
+        "title": "Open International – Front End Developer",
+        "period": "📅 June 2022 – July 2024 | 🌍 Remote",
+        "responsibilities": [
+          "Maintained, fixed, and developed new features using HTML, CSS, SASS, JavaScript, Ext.js, React, Git, Postman, Figma, Material UI.",
+          "Led a billing console redesign project optimized for high-volume data clients.",
+          "Collaborated with back-end teams for API integrations and troubleshooting."
+        ]
+      },
+      {
+        "title": "Open Intelligence – Backend Software Developer",
+        "period": "📅 May 2021 – Dec 2021 | 🌍 Remote",
+        "responsibilities": [
+          "Developed PL/SQL solutions to improve transaction performance and query optimization.",
+          "Fixed bugs and implemented new requirements following Agile methodologies.",
+          "Designed and executed testing for delivered features."
+        ]
+      }
+    ]
+  },
+  "skills": {
+    "title": "Tech Stack & Skills",
+    "categories": [
+      {
+        "name": "Languages",
+        "items": "JavaScript, TypeScript, HTML5, CSS3, PL/SQL, SQL"
+      },
+      {
+        "name": "Frameworks/Libraries",
+        "items": "React.js, Ext.js (Sencha), Next.js, Tailwind CSS"
+      },
+      {
+        "name": "Databases",
+        "items": "Oracle PL/SQL, MongoDB"
+      },
+      {
+        "name": "Tools",
+        "items": "Git, GitHub, GitLab, Bitbucket, Figma, Postman, Chrome DevTools"
+      }
+    ]
+  },
+  "education": {
+    "title": "Education",
+    "university": "Francisco de Paula Santander University",
+    "degree": "🎓 Bachelor's in Systems Engineering (2021)"
+  },
+  "certifications": {
+    "title": "Certifications",
+    "items": [
+      "React 17 – Platzi",
+      "JavaScript Basics – Platzi",
+      "Practical JavaScript – Platzi",
+      "Debugging with Chrome DevTools – Platzi",
+      "Professional Git and GitHub – Platzi"
+    ]
+  },
+  "projects": {
+    "title": "Projects",
+    "subtitle": "A selection of recent work. More coming soon.",
+    "placeholder": {
+      "title": "Project Placeholder",
+      "description": "Describe a key project here. Add link and details.",
+      "liveDemo": "Live Demo",
+      "source": "Source"
+    }
+  },
+  "contact": {
+    "title": "Let's Connect",
+    "location": "📍 Based in Cúcuta, Colombia",
+    "email": "📧 Email:",
+    "linkedin": "💼 LinkedIn:",
+    "sendMessage": "Send a Message",
+    "downloadResume": "Download Resume"
+  },
+  "footer": {
+    "copyright": "© {year} Jhorman Botello. All rights reserved."
+  }
+}

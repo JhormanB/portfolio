@@ -3,14 +3,16 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Jhorman Botello — Portfolio</title>
-    <meta name="description" content="Portfolio of Jhorman Botello, Software Engineer & Full Stack Developer specialized in Frontend." />
+    <title data-i18n="meta.title">Jhorman Botello — Portfolio</title>
+    <meta name="description" data-i18n="meta.description" content="Portfolio of Jhorman Botello, Software Engineer & Full Stack Developer specialized in Frontend." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="alternate" hreflang="en" href="https://jhormanb.github.io/portfolio/" />
+    <link rel="alternate" hreflang="es" href="https://jhormanb.github.io/portfolio/es/" />
   </head>
   <body>
     <header class="site-header" id="top">
@@ -21,16 +23,21 @@
             <span></span><span></span><span></span>
           </button>
           <ul id="nav-menu">
-            <li><a href="#about">About</a></li>
-            <li><a href="#achievements">Achievements</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#certifications">Certifications</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact" class="btn btn-primary btn-sm">Contact</a></li>
+            <li><a href="#about" data-i18n="nav.about">About</a></li>
+            <li><a href="#achievements" data-i18n="nav.achievements">Achievements</a></li>
+            <li><a href="#experience" data-i18n="nav.experience">Experience</a></li>
+            <li><a href="#skills" data-i18n="nav.skills">Skills</a></li>
+            <li><a href="#education" data-i18n="nav.education">Education</a></li>
+            <li><a href="#certifications" data-i18n="nav.certifications">Certifications</a></li>
+            <li><a href="#projects" data-i18n="nav.projects">Projects</a></li>
+            <li><a href="#contact" class="btn btn-primary btn-sm" data-i18n="nav.contact">Contact</a></li>
           </ul>
         </nav>
+        <div class="lang-switcher">
+          <a href="/" class="lang-link active" data-lang="en">EN</a>
+          <span class="lang-separator">|</span>
+          <a href="/es/" class="lang-link" data-lang="es">ES</a>
+        </div>
       </div>
     </header>
 
@@ -39,11 +46,11 @@
       <section class="section hero" aria-labelledby="hero-title">
         <div class="container hero-inner">
           <div class="hero-content" data-aos="fade-up" data-aos-delay="50">
-            <h1 id="hero-title" class="headline">👋 Hi, I’m <span>Jhorman Botello</span> – Software Engineer & Full Stack Developer</h1>
-            <p class="subheadline">Building scalable, user-focused web solutions with modern technologies.</p>
+            <h1 id="hero-title" class="headline" data-i18n="hero.headline">👋 Hi, I'm <span>Jhorman Botello</span> – Software Engineer & Full Stack Developer</h1>
+            <p class="subheadline" data-i18n="hero.subheadline">Building scalable, user-focused web solutions with modern technologies.</p>
             <div class="cta-group">
-              <a class="btn btn-primary" href="assets/Jhorman_Botello_CV.pdf" download>Download Resume</a>
-              <a class="btn btn-outline" href="#projects">View Projects</a>
+              <a class="btn btn-primary" href="assets/Jhorman_Botello_CV.pdf" download data-i18n="hero.downloadResume">Download Resume</a>
+              <a class="btn btn-outline" href="#projects" data-i18n="hero.viewProjects">View Projects</a>
             </div>
           </div>
           <div class="hero-visual" data-aos="zoom-in" data-aos-delay="150">
@@ -58,15 +65,15 @@
       <!-- About Me -->
       <section class="section" id="about" aria-labelledby="about-title">
         <div class="container" data-aos="fade-up">
-          <h2 id="about-title" class="section-title">About Me</h2>
-          <p class="section-lead">I am a Systems Engineer and Full Stack Software Developer with over 3 years of experience building user-centric digital solutions. My work focuses on front-end performance optimization, clean UI/UX, and scalable back-end logic. I am passionate about technology, problem-solving, and continuous learning.</p>
+          <h2 id="about-title" class="section-title" data-i18n="about.title">About Me</h2>
+          <p class="section-lead" data-i18n="about.content">I am a Systems Engineer and Full Stack Software Developer with over 3 years of experience building user-centric digital solutions. My work focuses on front-end performance optimization, clean UI/UX, and scalable back-end logic. I am passionate about technology, problem-solving, and continuous learning.</p>
         </div>
       </section>
 
       <!-- Key Achievements -->
       <section class="section alt" id="achievements" aria-labelledby="achievements-title">
         <div class="container" data-aos="fade-up">
-          <h2 id="achievements-title" class="section-title">Highlights & Achievements</h2>
+          <h2 id="achievements-title" class="section-title" data-i18n="achievements.title">Highlights & Achievements</h2>
           <ul class="cards three">
             <li class="card">
               <div class="card-icon">🚀</div>
@@ -91,7 +98,7 @@
       <!-- Experience -->
       <section class="section" id="experience" aria-labelledby="experience-title">
         <div class="container" data-aos="fade-up">
-          <h2 id="experience-title" class="section-title">Professional Experience</h2>
+          <h2 id="experience-title" class="section-title" data-i18n="experience.title">Professional Experience</h2>
 
           <div class="timeline">
             <article class="timeline-item">
@@ -126,7 +133,7 @@
       <!-- Skills -->
       <section class="section alt" id="skills" aria-labelledby="skills-title">
         <div class="container" data-aos="fade-up">
-          <h2 id="skills-title" class="section-title">Tech Stack & Skills</h2>
+          <h2 id="skills-title" class="section-title" data-i18n="skills.title">Tech Stack & Skills</h2>
           <div class="skills-grid">
             <div class="skill-group">
               <h3>Languages</h3>
@@ -151,7 +158,7 @@
       <!-- Education -->
       <section class="section" id="education" aria-labelledby="education-title">
         <div class="container" data-aos="fade-up">
-          <h2 id="education-title" class="section-title">Education</h2>
+          <h2 id="education-title" class="section-title" data-i18n="education.title">Education</h2>
           <div class="edu-item">
             <h3>Francisco de Paula Santander University</h3>
             <p>🎓 Bachelor’s in Systems Engineering (2021)</p>
@@ -162,7 +169,7 @@
       <!-- Certifications -->
       <section class="section alt" id="certifications" aria-labelledby="certifications-title">
         <div class="container" data-aos="fade-up">
-          <h2 id="certifications-title" class="section-title">Certifications</h2>
+          <h2 id="certifications-title" class="section-title" data-i18n="certifications.title">Certifications</h2>
           <ul class="list">
             <li>React 17 – Platzi</li>
             <li>JavaScript Basics – Platzi</li>
@@ -176,8 +183,8 @@
       <!-- Projects -->
       <section class="section" id="projects" aria-labelledby="projects-title">
         <div class="container" data-aos="fade-up">
-          <h2 id="projects-title" class="section-title">Projects</h2>
-          <p class="section-lead">A selection of recent work. More coming soon.</p>
+          <h2 id="projects-title" class="section-title" data-i18n="projects.title">Projects</h2>
+          <p class="section-lead" data-i18n="projects.subtitle">A selection of recent work. More coming soon.</p>
           <ul class="cards three">
             <li class="card project">
               <div class="project-thumb">
@@ -219,15 +226,15 @@
       <!-- Contact -->
       <section class="section alt" id="contact" aria-labelledby="contact-title">
         <div class="container" data-aos="fade-up">
-          <h2 id="contact-title" class="section-title">Let’s Connect</h2>
+          <h2 id="contact-title" class="section-title" data-i18n="contact.title">Let's Connect</h2>
           <ul class="contact-list">
-            <li>📍 Based in Cúcuta, Colombia</li>
-            <li>📧 Email: <a href="mailto:jhormanbd@hotmail.com">jhormanbd@hotmail.com</a></li>
-            <li>💼 LinkedIn: <a href="https://linkedin.com/in/jhormanbd" target="_blank" rel="noreferrer">linkedin.com/in/jhormanbd</a></li>
+            <li data-i18n="contact.location">📍 Based in Cúcuta, Colombia</li>
+            <li><span data-i18n="contact.email">📧 Email:</span> <a href="mailto:jhormanbd@hotmail.com">jhormanbd@hotmail.com</a></li>
+            <li><span data-i18n="contact.linkedin">💼 LinkedIn:</span> <a href="https://linkedin.com/in/jhormanbd" target="_blank" rel="noreferrer">linkedin.com/in/jhormanbd</a></li>
           </ul>
           <div class="cta-group">
-            <a class="btn btn-primary" href="mailto:jhormanbd@hotmail.com?subject=Contact%20from%20Portfolio">Send a Message</a>
-            <a class="btn btn-outline" href="assets/Jhorman_Botello_CV.pdf" download>Download Resume</a>
+            <a class="btn btn-primary" href="mailto:jhormanbd@hotmail.com?subject=Contact%20from%20Portfolio" data-i18n="contact.sendMessage">Send a Message</a>
+            <a class="btn btn-outline" href="assets/Jhorman_Botello_CV.pdf" download data-i18n="contact.downloadResume">Download Resume</a>
           </div>
         </div>
       </section>
@@ -235,7 +242,7 @@
 
     <footer class="site-footer">
       <div class="container">
-        <p>© <span id="year"></span> Jhorman Botello. All rights reserved.</p>
+        <p data-i18n="footer.copyright">© <span id="year"></span> Jhorman Botello. All rights reserved.</p>
       </div>
     </footer>
 
