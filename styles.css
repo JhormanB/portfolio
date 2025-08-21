@@ -43,11 +43,48 @@ body {
 .brand { color: #fff; text-decoration: none; font-weight: 800; letter-spacing: 0.3px; font-size: 20px; }
 .brand span { color: var(--accent); }
 
-.lang-switcher { display: flex; align-items: center; gap: 8px; }
-.lang-link { color: var(--muted); text-decoration: none; font-weight: 500; font-size: 14px; padding: 4px 8px; border-radius: 6px; transition: color 200ms ease, background 200ms ease; }
-.lang-link:hover { color: var(--link); background: rgba(125, 211, 252, 0.08); }
-.lang-link.active { color: var(--link); background: rgba(125, 211, 252, 0.12); }
-.lang-separator { color: var(--muted); opacity: 0.5; }
+.lang-switcher { 
+  display: flex; 
+  align-items: center; 
+  gap: 8px; 
+  margin-left: 20px;
+  position: relative;
+  z-index: 10;
+}
+
+.lang-link { 
+  color: var(--muted); 
+  text-decoration: none; 
+  font-weight: 600; 
+  font-size: 13px; 
+  padding: 6px 10px; 
+  border-radius: 8px; 
+  transition: all 200ms ease;
+  border: 1px solid transparent;
+  min-width: 32px;
+  text-align: center;
+}
+
+.lang-link:hover { 
+  color: var(--link); 
+  background: rgba(125, 211, 252, 0.08); 
+  border-color: rgba(125, 211, 252, 0.2);
+  transform: translateY(-1px);
+}
+
+.lang-link.active { 
+  color: var(--link); 
+  background: rgba(125, 211, 252, 0.15); 
+  border-color: rgba(125, 211, 252, 0.3);
+  box-shadow: 0 2px 8px rgba(125, 211, 252, 0.15);
+}
+
+.lang-separator { 
+  color: var(--muted); 
+  opacity: 0.4; 
+  font-weight: 300;
+  user-select: none;
+}
 
 .main-nav ul { list-style: none; display: flex; gap: 20px; margin: 0; padding: 0; align-items: center; }
 .main-nav a { color: var(--muted); text-decoration: none; font-weight: 500; }
@@ -123,6 +160,39 @@ body {
   .cards.three { grid-template-columns: 1fr; }
   .skills-grid { grid-template-columns: 1fr; }
   .photo-frame { width: 240px; height: 240px; }
+  
+  /* Mobile language switcher */
+  .lang-switcher {
+    margin-left: 12px;
+    gap: 6px;
+  }
+  
+  .lang-link {
+    font-size: 12px;
+    padding: 5px 8px;
+    min-width: 28px;
+  }
+  
+  .lang-separator {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-inner {
+    min-height: 60px;
+  }
+  
+  .lang-switcher {
+    margin-left: 8px;
+    gap: 4px;
+  }
+  
+  .lang-link {
+    font-size: 11px;
+    padding: 4px 6px;
+    min-width: 24px;
+  }
 }
 
 
