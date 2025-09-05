@@ -1,42 +1,79 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title data-i18n="meta.title">Jhorman Botello — Portafolio</title>
-    <meta name="description" data-i18n="meta.description" content="Portafolio de Jhorman Botello, Ingeniero de Sistemas y Desarrollador Full Stack especializado en Frontend." />
+    <meta
+      name="description"
+      data-i18n="meta.description"
+      content="Portafolio de Jhorman Botello, Ingeniero de Sistemas y Desarrollador Full Stack especializado en Frontend."
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
     <link rel="stylesheet" href="../styles.css" />
     <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
-    <link rel="alternate" hreflang="en" href="https://jhormanb.github.io/portfolio/" />
-    <link rel="alternate" hreflang="es" href="https://jhormanb.github.io/portfolio/es/" />
+    <link
+      rel="alternate"
+      hreflang="en"
+      href="https://jhormanb.github.io/portfolio/"
+    />
+    <link
+      rel="alternate"
+      hreflang="es"
+      href="https://jhormanb.github.io/portfolio/es/"
+    />
   </head>
   <body>
     <header class="site-header" id="top">
       <div class="container header-inner">
         <a href="#top" class="brand">JB<span>.</span></a>
         <nav class="main-nav" aria-label="Main Navigation">
-          <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+          <button
+            class="nav-toggle"
+            aria-expanded="false"
+            aria-controls="nav-menu"
+            aria-label="Open menu"
+          >
             <span></span><span></span><span></span>
           </button>
           <ul id="nav-menu">
             <li><a href="#about" data-i18n="nav.about">Acerca de</a></li>
-            <li><a href="#achievements" data-i18n="nav.achievements">Logros</a></li>
-            <li><a href="#experience" data-i18n="nav.experience">Experiencia</a></li>
+            <li>
+              <a href="#achievements" data-i18n="nav.achievements">Logros</a>
+            </li>
+            <li>
+              <a href="#experience" data-i18n="nav.experience">Experiencia</a>
+            </li>
             <li><a href="#skills" data-i18n="nav.skills">Habilidades</a></li>
-            <li><a href="#education" data-i18n="nav.education">Educación</a></li>
-            <li><a href="#certifications" data-i18n="nav.certifications">Certificaciones</a></li>
+            <li>
+              <a href="#education" data-i18n="nav.education">Educación</a>
+            </li>
+            <li>
+              <a href="#certifications" data-i18n="nav.certifications"
+                >Certificaciones</a
+              >
+            </li>
             <li><a href="#projects" data-i18n="nav.projects">Proyectos</a></li>
-            <li><a href="#contact" class="btn btn-primary btn-sm" data-i18n="nav.contact">Contacto</a></li>
+            <li>
+              <a
+                href="#contact"
+                class="btn btn-primary btn-sm"
+                data-i18n="nav.contact"
+                >Contacto</a
+              >
+            </li>
           </ul>
         </nav>
         <div class="lang-switcher">
-          <a href="/" class="lang-link" data-lang="en">EN</a>
+          <a href="#" class="lang-link" data-lang="en">EN</a>
           <span class="lang-separator">|</span>
-          <a href="/es/index.html" class="lang-link active" data-lang="es">ES</a>
+          <a href="#" class="lang-link active" data-lang="es">ES</a>
         </div>
       </div>
     </header>
@@ -46,11 +83,28 @@
       <section class="section hero" aria-labelledby="hero-title">
         <div class="container hero-inner">
           <div class="hero-content" data-aos="fade-up" data-aos-delay="50">
-            <h1 id="hero-title" class="headline" data-i18n="hero.headline">👋 Hola, soy <span>Jhorman Botello</span> – Ingeniero de Sistemas y Desarrollador Full Stack</h1>
-            <p class="subheadline" data-i18n="hero.subheadline">Construyendo soluciones web escalables y centradas en el usuario con tecnologías modernas.</p>
+            <h1 id="hero-title" class="headline" data-i18n="hero.headline">
+              👋 Hola, soy <span>Jhorman Botello</span> – Ingeniero de Sistemas
+              y Desarrollador Full Stack
+            </h1>
+            <p class="subheadline" data-i18n="hero.subheadline">
+              Construyendo soluciones web escalables y centradas en el usuario
+              con tecnologías modernas.
+            </p>
             <div class="cta-group">
-              <a class="btn btn-primary" href="../assets/Jhorman_Botello_CV.pdf" download data-i18n="hero.downloadResume">Descargar CV</a>
-              <a class="btn btn-outline" href="#projects" data-i18n="hero.viewProjects">Ver Proyectos</a>
+              <a
+                class="btn btn-primary"
+                href="../assets/Jhorman_Botello_CV.pdf"
+                download
+                data-i18n="hero.downloadResume"
+                >Descargar CV</a
+              >
+              <a
+                class="btn btn-outline"
+                href="#projects"
+                data-i18n="hero.viewProjects"
+                >Ver Proyectos</a
+              >
             </div>
           </div>
           <div class="hero-visual" data-aos="zoom-in" data-aos-delay="150">
@@ -65,40 +119,82 @@
       <!-- About Me -->
       <section class="section" id="about" aria-labelledby="about-title">
         <div class="container" data-aos="fade-up">
-          <h2 id="about-title" class="section-title" data-i18n="about.title">Acerca de Mí</h2>
-          <p class="section-lead" data-i18n="about.content">Soy Ingeniero de Sistemas y Desarrollador Full Stack con más de 3 años de experiencia construyendo soluciones digitales centradas en el usuario. Mi trabajo se enfoca en la optimización del rendimiento front-end, UI/UX limpia y lógica back-end escalable. Soy apasionado por la tecnología, la resolución de problemas y el aprendizaje continuo.</p>
+          <h2 id="about-title" class="section-title" data-i18n="about.title">
+            Acerca de Mí
+          </h2>
+          <p class="section-lead" data-i18n="about.content">
+            Soy Ingeniero de Sistemas y Desarrollador Full Stack con más de 3
+            años de experiencia construyendo soluciones digitales centradas en
+            el usuario. Mi trabajo se enfoca en la optimización del rendimiento
+            front-end, UI/UX limpia y lógica back-end escalable. Soy apasionado
+            por la tecnología, la resolución de problemas y el aprendizaje
+            continuo.
+          </p>
         </div>
       </section>
 
       <!-- Key Achievements -->
-      <section class="section alt" id="achievements" aria-labelledby="achievements-title">
+      <section
+        class="section alt"
+        id="achievements"
+        aria-labelledby="achievements-title"
+      >
         <div class="container" data-aos="fade-up">
-          <h2 id="achievements-title" class="section-title" data-i18n="achievements.title">Destacados y Logros</h2>
+          <h2
+            id="achievements-title"
+            class="section-title"
+            data-i18n="achievements.title"
+          >
+            Destacados y Logros
+          </h2>
           <ul class="cards three">
             <li class="card">
               <div class="card-icon">🚀</div>
-              <p>Reduje el tiempo de renderizado del navegador en un 75% (de 2 minutos a 30 segundos).</p>
+              <p>
+                Reduje el tiempo de renderizado del navegador en un 75% (de 2
+                minutos a 30 segundos).
+              </p>
             </li>
             <li class="card">
               <div class="card-icon">👥</div>
-              <p>Lideré un equipo de 3 desarrolladores, mejorando el tiempo de entrega de proyectos en un 20%.</p>
+              <p>
+                Lideré un equipo de 3 desarrolladores, mejorando el tiempo de
+                entrega de proyectos en un 20%.
+              </p>
             </li>
             <li class="card">
               <div class="card-icon">⚡</div>
-              <p>Rediseñé una consola de facturación manejando grandes volúmenes de datos, logrando ganancias significativas de rendimiento.</p>
+              <p>
+                Rediseñé una consola de facturación manejando grandes volúmenes
+                de datos, logrando ganancias significativas de rendimiento.
+              </p>
             </li>
             <li class="card">
               <div class="card-icon">✅</div>
-              <p>Reduje los errores front-end en un 50% durante el primer semestre, permitiendo un desarrollo más rápido de características.</p>
+              <p>
+                Reduje los errores front-end en un 50% durante el primer
+                semestre, permitiendo un desarrollo más rápido de
+                características.
+              </p>
             </li>
           </ul>
         </div>
       </section>
 
       <!-- Experience -->
-      <section class="section" id="experience" aria-labelledby="experience-title">
+      <section
+        class="section"
+        id="experience"
+        aria-labelledby="experience-title"
+      >
         <div class="container" data-aos="fade-up">
-          <h2 id="experience-title" class="section-title" data-i18n="experience.title">Experiencia Profesional</h2>
+          <h2
+            id="experience-title"
+            class="section-title"
+            data-i18n="experience.title"
+          >
+            Experiencia Profesional
+          </h2>
 
           <div class="timeline">
             <article class="timeline-item">
@@ -107,9 +203,19 @@
                 <h3>Open International – Desarrollador Front End</h3>
                 <p class="meta">📅 Junio 2022 – Julio 2024 | 🌍 Remoto</p>
                 <ul>
-                  <li>Mantuve, corregí y desarrollé nuevas características usando HTML, CSS, SASS, JavaScript, Ext.js, React, Git, Postman, Figma, Material UI.</li>
-                  <li>Lideré un proyecto de rediseño de consola de facturación optimizada para clientes de alto volumen de datos.</li>
-                  <li>Colaboré con equipos back-end para integraciones de API y resolución de problemas.</li>
+                  <li>
+                    Mantuve, corregí y desarrollé nuevas características usando
+                    HTML, CSS, SASS, JavaScript, Ext.js, React, Git, Postman,
+                    Figma, Material UI.
+                  </li>
+                  <li>
+                    Lideré un proyecto de rediseño de consola de facturación
+                    optimizada para clientes de alto volumen de datos.
+                  </li>
+                  <li>
+                    Colaboré con equipos back-end para integraciones de API y
+                    resolución de problemas.
+                  </li>
                 </ul>
               </div>
             </article>
@@ -120,9 +226,18 @@
                 <h3>Open Intelligence – Desarrollador Backend</h3>
                 <p class="meta">📅 Mayo 2021 – Dic 2021 | 🌍 Remoto</p>
                 <ul>
-                  <li>Desarrollé soluciones PL/SQL para mejorar el rendimiento de transacciones y optimización de consultas.</li>
-                  <li>Corregí errores e implementé nuevos requerimientos siguiendo metodologías Ágiles.</li>
-                  <li>Diseñé y ejecuté pruebas para las características entregadas.</li>
+                  <li>
+                    Desarrollé soluciones PL/SQL para mejorar el rendimiento de
+                    transacciones y optimización de consultas.
+                  </li>
+                  <li>
+                    Corregí errores e implementé nuevos requerimientos siguiendo
+                    metodologías Ágiles.
+                  </li>
+                  <li>
+                    Diseñé y ejecuté pruebas para las características
+                    entregadas.
+                  </li>
                 </ul>
               </div>
             </article>
@@ -133,7 +248,9 @@
       <!-- Skills -->
       <section class="section alt" id="skills" aria-labelledby="skills-title">
         <div class="container" data-aos="fade-up">
-          <h2 id="skills-title" class="section-title" data-i18n="skills.title">Stack Tecnológico y Habilidades</h2>
+          <h2 id="skills-title" class="section-title" data-i18n="skills.title">
+            Stack Tecnológico y Habilidades
+          </h2>
           <div class="skills-grid">
             <div class="skill-group">
               <h3>Lenguajes</h3>
@@ -149,7 +266,9 @@
             </div>
             <div class="skill-group">
               <h3>Herramientas</h3>
-              <p>Git, GitHub, GitLab, Bitbucket, Figma, Postman, Chrome DevTools</p>
+              <p>
+                Git, GitHub, GitLab, Bitbucket, Figma, Postman, Chrome DevTools
+              </p>
             </div>
           </div>
         </div>
@@ -158,7 +277,13 @@
       <!-- Education -->
       <section class="section" id="education" aria-labelledby="education-title">
         <div class="container" data-aos="fade-up">
-          <h2 id="education-title" class="section-title" data-i18n="education.title">Educación</h2>
+          <h2
+            id="education-title"
+            class="section-title"
+            data-i18n="education.title"
+          >
+            Educación
+          </h2>
           <div class="edu-item">
             <h3>Universidad Francisco de Paula Santander</h3>
             <p>🎓 Ingeniería de Sistemas (2021)</p>
@@ -167,9 +292,19 @@
       </section>
 
       <!-- Certifications -->
-      <section class="section alt" id="certifications" aria-labelledby="certifications-title">
+      <section
+        class="section alt"
+        id="certifications"
+        aria-labelledby="certifications-title"
+      >
         <div class="container" data-aos="fade-up">
-          <h2 id="certifications-title" class="section-title" data-i18n="certifications.title">Certificaciones</h2>
+          <h2
+            id="certifications-title"
+            class="section-title"
+            data-i18n="certifications.title"
+          >
+            Certificaciones
+          </h2>
           <ul class="list">
             <li>React 17 – Platzi</li>
             <li>JavaScript Basics – Platzi</li>
@@ -183,40 +318,78 @@
       <!-- Projects -->
       <section class="section" id="projects" aria-labelledby="projects-title">
         <div class="container" data-aos="fade-up">
-          <h2 id="projects-title" class="section-title" data-i18n="projects.title">Proyectos</h2>
-          <p class="section-lead" data-i18n="projects.subtitle">Una selección de trabajos recientes. Más próximamente.</p>
+          <h2
+            id="projects-title"
+            class="section-title"
+            data-i18n="projects.title"
+          >
+            Proyectos
+          </h2>
+          <p class="section-lead" data-i18n="projects.subtitle">
+            Una selección de trabajos recientes. Más próximamente.
+          </p>
           <ul class="cards three">
             <li class="card project">
               <div class="project-thumb">
-                <img src="../assets/projects/project-placeholder.svg" alt="Project thumbnail" />
+                <img
+                  src="../assets/projects/project-placeholder.svg"
+                  alt="Project thumbnail"
+                />
               </div>
               <h3>Proyecto Placeholder</h3>
               <p>Describe un proyecto clave aquí. Añade enlace y detalles.</p>
               <div class="project-actions">
-                <a href="#" class="btn btn-outline btn-sm" aria-disabled="true">Demo en Vivo</a>
-                <a href="#" class="btn btn-secondary btn-sm" aria-disabled="true">Código</a>
+                <a href="#" class="btn btn-outline btn-sm" aria-disabled="true"
+                  >Demo en Vivo</a
+                >
+                <a
+                  href="#"
+                  class="btn btn-secondary btn-sm"
+                  aria-disabled="true"
+                  >Código</a
+                >
               </div>
             </li>
             <li class="card project">
               <div class="project-thumb">
-                <img src="../assets/projects/project-placeholder.svg" alt="Project thumbnail" />
+                <img
+                  src="../assets/projects/project-placeholder.svg"
+                  alt="Project thumbnail"
+                />
               </div>
               <h3>Proyecto Placeholder</h3>
               <p>Describe un proyecto clave aquí. Añade enlace y detalles.</p>
               <div class="project-actions">
-                <a href="#" class="btn btn-outline btn-sm" aria-disabled="true">Demo en Vivo</a>
-                <a href="#" class="btn btn-secondary btn-sm" aria-disabled="true">Código</a>
+                <a href="#" class="btn btn-outline btn-sm" aria-disabled="true"
+                  >Demo en Vivo</a
+                >
+                <a
+                  href="#"
+                  class="btn btn-secondary btn-sm"
+                  aria-disabled="true"
+                  >Código</a
+                >
               </div>
             </li>
             <li class="card project">
               <div class="project-thumb">
-                <img src="../assets/projects/project-placeholder.svg" alt="Project thumbnail" />
+                <img
+                  src="../assets/projects/project-placeholder.svg"
+                  alt="Project thumbnail"
+                />
               </div>
               <h3>Proyecto Placeholder</h3>
               <p>Describe un proyecto clave aquí. Añade enlace y detalles.</p>
               <div class="project-actions">
-                <a href="#" class="btn btn-outline btn-sm" aria-disabled="true">Demo en Vivo</a>
-                <a href="#" class="btn btn-secondary btn-sm" aria-disabled="true">Código</a>
+                <a href="#" class="btn btn-outline btn-sm" aria-disabled="true"
+                  >Demo en Vivo</a
+                >
+                <a
+                  href="#"
+                  class="btn btn-secondary btn-sm"
+                  aria-disabled="true"
+                  >Código</a
+                >
               </div>
             </li>
           </ul>
@@ -226,15 +399,43 @@
       <!-- Contact -->
       <section class="section alt" id="contact" aria-labelledby="contact-title">
         <div class="container" data-aos="fade-up">
-          <h2 id="contact-title" class="section-title" data-i18n="contact.title">Conectemos</h2>
+          <h2
+            id="contact-title"
+            class="section-title"
+            data-i18n="contact.title"
+          >
+            Conectemos
+          </h2>
           <ul class="contact-list">
             <li data-i18n="contact.location">📍 Ubicado en Cúcuta, Colombia</li>
-            <li><span data-i18n="contact.email">📧 Email:</span> <a href="mailto:jhormanbd@hotmail.com">jhormanbd@hotmail.com</a></li>
-            <li><span data-i18n="contact.linkedin">💼 LinkedIn:</span> <a href="https://linkedin.com/in/jhormanbd" target="_blank" rel="noreferrer">linkedin.com/in/jhormanbd</a></li>
+            <li>
+              <span data-i18n="contact.email">📧 Email:</span>
+              <a href="mailto:jhormanbd@hotmail.com">jhormanbd@hotmail.com</a>
+            </li>
+            <li>
+              <span data-i18n="contact.linkedin">💼 LinkedIn:</span>
+              <a
+                href="https://linkedin.com/in/jhormanbd"
+                target="_blank"
+                rel="noreferrer"
+                >linkedin.com/in/jhormanbd</a
+              >
+            </li>
           </ul>
           <div class="cta-group">
-            <a class="btn btn-primary" href="mailto:jhormanbd@hotmail.com?subject=Contacto%20desde%20Portafolio" data-i18n="contact.sendMessage">Enviar Mensaje</a>
-            <a class="btn btn-outline" href="../assets/Jhorman_Botello_CV.pdf" download data-i18n="contact.downloadResume">Descargar CV</a>
+            <a
+              class="btn btn-primary"
+              href="mailto:jhormanbd@hotmail.com?subject=Contacto%20desde%20Portafolio"
+              data-i18n="contact.sendMessage"
+              >Enviar Mensaje</a
+            >
+            <a
+              class="btn btn-outline"
+              href="../assets/Jhorman_Botello_CV.pdf"
+              download
+              data-i18n="contact.downloadResume"
+              >Descargar CV</a
+            >
           </div>
         </div>
       </section>
@@ -242,7 +443,10 @@
 
     <footer class="site-footer">
       <div class="container">
-        <p data-i18n="footer.copyright">© <span id="year"></span> Jhorman Botello. Todos los derechos reservados.</p>
+        <p data-i18n="footer.copyright">
+          © <span id="year"></span> Jhorman Botello. Todos los derechos
+          reservados.
+        </p>
       </div>
     </footer>
 

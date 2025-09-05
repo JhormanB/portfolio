@@ -31,7 +31,10 @@ let translations = {};
 // Load translations
 async function loadTranslations(lang) {
   try {
-    const response = await fetch(`assets/i18n/${lang}.json`);
+    // Determine the correct path based on current location
+    const isInSubdir = window.location.pathname.includes('/es/');
+    const basePath = isInSubdir ? '../' : '';
+    const response = await fetch(`${basePath}assets/i18n/${lang}.json`);
     translations[lang] = await response.json();
   } catch (error) {
     console.error(`Failed to load ${lang} translations:`, error);
@@ -107,12 +110,7 @@ async function initI18n() {
       e.preventDefault();
       const newLang = link.getAttribute('data-lang');
       localStorage.setItem('preferred-lang', newLang);
-      
-      if (newLang === 'es') {
-        window.location.href = '/es/';
-      } else {
-        window.location.href = '/';
-      }
+      navigateToLanguage(newLang);
     });
   });
 }
@@ -123,5 +121,70 @@ if (document.readyState === 'loading') {
 } else {
   initI18n();
 }
+// Helper to determine base path and handle local vs server environments
+function getBasePath() {
+  const protocol = window.location.protocol;
+  const hostname = window.location.hostname;
+  const path = window.location.pathname;
+  
+  // For local file:// protocol
+  if (protocol === 'file:') {
+    const currentPath = path.replace(/\\/g, '/');
+    if (currentPath.includes('/es/')) {
+      // We're in the Spanish subdirectory
+      return currentPath.replace('/es/index.html', '/');
+    } else {
+      // We're in the root directory
+      return currentPath.replace('/index.html', '/');
+    }
+  }
+  
+  // For GitHub Pages: username.github.io/repository-name/
+  if (hostname.includes('github.io')) {
+    const pathParts = path.split('/').filter(part => part);
+    if (pathParts.length > 0 && pathParts[0] !== 'es') {
+      return `/${pathParts[0]}/`;
+    }
+    return '/portfolio/'; // fallback for your expected URL
+  }
+  
+  // For local server development
+  return '/';
+}
 
-
+// Handle navigation for different environments
+function navigateToLanguage(lang) {
+  const protocol = window.location.protocol;
+  const currentPath = window.location.pathname.replace(/\\/g, '/');
+  
+  if (protocol === 'file:') {
+    // For local file:// protocol, construct the full file path
+    let targetPath;
+    if (lang === 'es') {
+      if (currentPath.includes('/es/')) {
+        // Already in Spanish, no need to navigate
+        return;
+      } else {
+        // Navigate from root to Spanish
+        targetPath = currentPath.replace('/index.html', '/es/index.html');
+      }
+    } else {
+      if (currentPath.includes('/es/')) {
+        // Navigate from Spanish to root
+        targetPath = currentPath.replace('/es/index.html', '/index.html');
+      } else {
+        // Already in English, no need to navigate
+        return;
+      }
+    }
+    window.location.href = `file://${targetPath}`;
+  } else {
+    // For server environments (local server or GitHub Pages)
+    const basePath = getBasePath();
+    if (lang === 'es') {
+      window.location.href = `${basePath}es/`;
+    } else {
+      window.location.href = basePath;
+    }
+  }
+}
